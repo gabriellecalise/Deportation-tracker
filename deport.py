@@ -25,9 +25,11 @@ def get_state(source, id):
             state = row["state"]
             total_deport = row["total_deport"]
             map = row["map"]
+            not_convicted = row["not_convicted"]
+            top_reasons = row["top_reasons"]
             id = str(id)
             #RETURN LINE HAS TO BE TABBED JUST RIGHT. IF IT ISNT INDENTED, THE LOOP WILL NOT WORK. THIS ONE HAS TO BE PARALLEL TO THE ID=STR(ID). I DONT KNOW WHY BUT IT JUST WORKS
-            return id, state, total_deport, map
+            return id, state, total_deport, map, not_convicted, top_reasons
 
 
 #this is the route for the homepage of the site
@@ -40,8 +42,8 @@ def index():
 #route for the detail page for each state
 @app.route('/state/<id>.html/')
 def state(id):
-    id, state, total_deport, map = get_state(STATES, id)
-    return render_template('states.html', state=state, total_deport=total_deport, map=map)
+    id, state, total_deport, map, not_convicted, top_reasons = get_state(STATES, id)
+    return render_template('states.html', state=state, total_deport=total_deport, map=map, not_convicted=not_convicted, top_reasons=top_reasons)
 
 
 #run in debug mode
