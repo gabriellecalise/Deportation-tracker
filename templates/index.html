@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> Top states for Deportations </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1>The states with the most deportations</h1>
+
+<p>Click on each state to see the number of deportations and where they took place in 2015.</p>
+
+
+<ul>
+<!-- it must say pair in pairs because in line 33 on npr.py you set up the variable to say pair = ids_and_names. also, refer to the help file in google docs -->
+{% for pair in pairs %}
+
+    <li> <a href="{{ url_for('state', id=pair[0] ) }}"> {{ pair[1] }} </a> </li>
+
+{% endfor %}
+</ul>
+
+
+</div> <!-- closes wrapper that contains the stuff inside -->
+
+</body>
+</html>

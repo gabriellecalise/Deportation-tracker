@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> Detail page for {{ state }} </title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+<div id="wrapper">
+
+<!-- title, author and year come from winners.py -->
+
+<h1>{{ state }}</h1>
+
+
+<p>Click on the map to see how many people were deported from each location:<br>
+
+<iframe width="500" height="300" scrolling="no" frameborder="no"
+src="{{ map }}"></iframe>
+
+  </p>
+
+
+<p>Total deportations from {{ state }}: {{ total_deport }}</p>
+
+
+
+<p><a href="{{ url_for('index') }}">Go back to the list of states</a></p>
+
+
+</div> <!-- close wrapper -->
+
+</body>
+</html>
