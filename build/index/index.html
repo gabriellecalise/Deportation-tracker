@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title> Top states for Deportations </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="../static/css/main2.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 
@@ -35,11 +35,31 @@
 
 <ol>
 <!-- it must say pair in pairs because in line 33 on npr.py you set up the variable to say pair = ids_and_names. also, refer to the help file in google docs -->
-{% for pair in pairs %}
 
-    <li> <a href="{{ url_for('state', id=pair[0] ) }}"> {{ pair[1] }} </a> </li>
 
-{% endfor %}
+    <li> <a href="../state/427336.html/index.html"> Texas </a> </li>
+
+
+
+    <li> <a href="../state/322016.html/index.html"> California </a> </li>
+
+
+
+    <li> <a href="../state/352492.html/index.html"> Arizona </a> </li>
+
+
+
+    <li> <a href="../state/682334.html/index.html"> Louisiana </a> </li>
+
+
+
+    <li> <a href="../state/567845.html/index.html"> Georgia </a> </li>
+
+
+
+    <li> <a href="../state/102447.html/index.html"> Florida </a> </li>
+
+
 </ol>
 
 
@@ -47,7 +67,7 @@
 
 
 <div id="about">
-  <i>Deported</i> was created by Gabrielle Calise. The Github repo can be found <a href="https://github.com/gabriellecalise/Deportation-tracker"> here</a>. To read more about this project, check out my post on <a href="https://medium.com/@GabrielleCalise/how-i-made-deported-443172ba9825" target="_blank"> Medium</a>. Artwork is my own. The most up-to-date immigration data (through Jan. 2016) was found in the <a href="http://trac.syr.edu/phptools/immigration/remove/" target="_blank"> TRAC Immigration database</a>.
+  <i>Deported</i> was created by Gabrielle Calise. To read more about this project, check out my post on <a href="https://medium.com/@GabrielleCalise/how-i-made-deported-443172ba9825" target="_blank"> Medium</a>. Artwork is my own. The most up-to-date immigration data (through Jan. 2016) was found in the <a href="http://trac.syr.edu/phptools/immigration/remove/" target="_blank"> TRAC Immigration database</a>.
 </div>
 
 </body>
