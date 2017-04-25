@@ -6,6 +6,7 @@
     <title> Detail page for {{ state }} </title>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
 
 <p>Click on the map to see how many people were deported from each location:<br>
 
-<iframe width="500" height="300" scrolling="no" frameborder="no"
+<iframe width="600" height="400" scrolling="no" frameborder="no"
 src="{{ map }}"></iframe>
 
 </p>
@@ -28,7 +29,7 @@ src="{{ map }}"></iframe>
 
 <p> Of the people who were deported, {{ not_convicted }} did not have a criminal conviction.</p>
 
-<p>The top three criminal convictions that did lead to deportation in this state were {{ top_reasons }}. </p> 
+<p>The top three criminal convictions that did lead to deportation in this state were {{ top_reasons }}. </p>
 
 
 <p><a href="{{ url_for('index') }}">Go back to the list of states</a></p>

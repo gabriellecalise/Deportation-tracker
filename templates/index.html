@@ -4,28 +4,51 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title> Top states for Deportations </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 
 <body>
-<div id="wrapper">
 
-<h1>The states with the most deportations</h1>
+<div id="topper">
+  <h1> Deported </h1>
+</div>
 
-<p>Click on each state to see the number of deportations and where they took place in 2015.</p>
 
 
-<ul>
+<div id="intro">
+
+  <p>President Trump has <a href="https://www.washingtonpost.com/news/the-fix/wp/2016/11/13/donald-trump-plans-to-immediately-deport-2-to-3-million-undocumented-immigrants/?utm_term=.0bf8572a3b50" target="_blank"> vowed to deport 2 to 3 million undocumented immigrants with criminal records</a> from the United States during his presidency. But before we look forward, how has the United States most recently handled deportation? Let's look at the numbers. </p>
+
+  <p><i>Deported</i> presents information for each of the top six states for deportations in the U.S. The project examines the deportations from each of these states and shows how many people were deported without criminal convictions as well as the top three criminal convictions that led to deportation.</p>
+
+  <p>Click on a state to learn more:</p>
+
+
+
+
+
+
+
+<!--<p>Click on each state to see the number of deportations and where they took place in 2015.</p> -->
+
+
+<ol>
 <!-- it must say pair in pairs because in line 33 on npr.py you set up the variable to say pair = ids_and_names. also, refer to the help file in google docs -->
 {% for pair in pairs %}
 
     <li> <a href="{{ url_for('state', id=pair[0] ) }}"> {{ pair[1] }} </a> </li>
 
 {% endfor %}
-</ul>
+</ol>
 
 
 </div> <!-- closes wrapper that contains the stuff inside -->
+
+
+<div id="about">
+  <i>Deported</i> was created by Gabrielle Calise. To read more about this project, check out my post on <a href="https://medium.com/@GabrielleCalise/how-i-made-deported-443172ba9825" target="_blank"> Medium</a>. Artwork is my own. The most up-to-date immigration data (through Jan. 2016) was found in the <a href="http://trac.syr.edu/phptools/immigration/remove/" target="_blank"> TRAC Immigration database</a>.
+</div>
 
 </body>
 </html>

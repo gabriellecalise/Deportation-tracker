@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    margin: 0;
+    font-size: 130%;
+    color: #000;
+    box-sizing: border-box;
+    background-color: #d3d4d4;
+
+  }
+
+
+#topper {
+  font-size: 300%;
+  font-style: italic;
+  text-align: center;
+  color: #fde;
+  /*background-image: url("../images/america2.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;*/
+  background: url("../images/americawide.jpg") no-repeat center center fixed;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 17%;
+}
+
+#intro {
+  background-color: #489;
+  color: #fff;
+  padding: 50px 200px;
+  height: 100vh;
+}
+
+#about {
+  background-color: #9bb;
+  padding: 50px 200px;
+  height: 200px;
+
+}
+
+
+h1 {
+  /*For some reason there was about an inch of space before and after the topper div and the console was saying it was because of the H1. Margin 0 solved this problem.*/
+  margin: 0;
+}
+
+a {
+  color: #fde;
+}
+
+
+a:hover {
+  color: #739;
+}
