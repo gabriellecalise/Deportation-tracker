@@ -43,8 +43,10 @@ a:hover {
 
 @media (max-width: 770px) {
 
-
-
+  iframe {
+    width: 300px;
+    height: 400px;
+  }
 
 
     #wrapper {

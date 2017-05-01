@@ -39,12 +39,27 @@ a:hover {
 }
 
 
+.number {
+  /*font-size: 1.5em;
+  color: #0c0;*/
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom-color: #f65;
+
+}
+
+iframe {
+  padding-top: 10px;
+}
+
 /* media queries */
 
 @media (max-width: 770px) {
 
-
-
+  iframe {
+    width: 300px;
+    height: 400px;
+  }
 
 
     #wrapper {

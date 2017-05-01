@@ -19,17 +19,17 @@
 
 <p>Click on the map to see how many people were deported from each location:<br>
 
-<iframe width="600" height="400" scrolling="no" frameborder="no"
+<iframe width="800" height="400" scrolling="no" frameborder="no"
 src="{{ map }}"></iframe>
 
 </p>
 
 
-<p>Total deportations from {{ state }}: {{ total_deport }}</p>
+<p>Total deportations from {{ state }}: <span class="number">{{ total_deport }}</span></p>
 
-<p> Of the people who were deported, {{ not_convicted }} did not have a criminal conviction.</p>
+<p> Of the people who were deported, <span class="number">{{ not_convicted }}</span> did not have a criminal conviction.</p>
 
-<p>The top three criminal convictions that did lead to deportation in this state were {{ top_reasons }}. </p>
+<p>The top three criminal convictions that did lead to deportation in this state were:{{ top_reasons }}. </p>
 
 
 <p><a href="{{ url_for('index') }}">Go back to the list of states</a></p>

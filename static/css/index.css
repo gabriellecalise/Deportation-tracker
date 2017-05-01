@@ -45,6 +45,7 @@ body {
 h1 {
   /*For some reason there was about an inch of space before and after the topper div and the console was saying it was because of the H1. Margin 0 solved this problem.*/
   margin: 0;
+
 }
 
 a {
@@ -55,6 +56,7 @@ a {
 a:hover {
   color: #739;
 }
+
 
 
 
@@ -84,8 +86,9 @@ a:hover {
   #topper {
     margin: 0;
     background-size: auto 35%;
-    background-position: 50% 0px;
-    height: 230px;
+    background-position: center;
+    /* don't add a height, unless it's max or min
+   height: 230px;*/
   }
 
   h1 {
@@ -95,7 +98,7 @@ a:hover {
 
   #intro {
     margin:0;
-    padding: 40px;
+    padding: 20px;
     width: 100%;
     height: 850px;
   }
