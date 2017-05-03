@@ -10,8 +10,15 @@ body {
   }
 
 
+#wrapper {
+
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 #topper {
-  font-size: 300%;
+  font-size: 3em;
   font-style: italic;
   text-align: center;
   color: #fde;
@@ -35,9 +42,10 @@ body {
 }
 
 #about {
-  background-color: #9bb;
+  background-color: #267;
+  color: #fff;
   padding: 50px 200px;
-  height: 200px;
+  height: 200%;
 
 }
 
@@ -54,7 +62,7 @@ a {
 
 
 a:hover {
-  color: #739;
+  color: #abf;
 }
 
 
@@ -83,6 +91,8 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+
+
   #topper {
     margin: 0;
     background-size: auto 35%;
@@ -98,16 +108,16 @@ a:hover {
 
   #intro {
     margin:0;
-    padding: 20px;
-    width: 100%;
-    height: 850px;
+    padding: 40px;
+    width: 80%; /*this limits the text from running off the page*/
+    height: 60%;
   }
 
 #about {
   margin:0;
   padding: 40px;
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  height: 40%;
 }
 
 
